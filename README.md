@@ -2,7 +2,7 @@
 Creando una aplicacion con nestjs en el backend y react en el frontend con una db en mongodb 
 
 # El backend 
-In the following directory task-api
+In the following directory tasksback
 
 ## Installation
 ```bash
