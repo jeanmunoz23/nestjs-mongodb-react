@@ -1,26 +1,25 @@
-import { ChangeEvent, useState } from 'react';
-import { createTaskRequest } from '../api/task';
-// import { useTasks } from '../context/useTasks';
+import { ChangeEvent, FormEvent, useState } from "react";
+import { useTasks } from "../context/useTasks";
 
 function TaskForm() {
   const [task, setTask] = useState({
-    title: '',
-    description: '',
+    title: "",
+    description: "",
     done: false,
   });
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const { createTask } = useTasks();
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setTask({ ...task, [e.target.name]: e.target.value });
   };
-  // const { createTask } = useTasks();
 
-  const handleSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // await createTask(task);
-    console.log(task);
-    const res = await createTaskRequest(task);
-    const data = await res.json();
-    console.log(data);
+    await createTask(task);
   };
+
   return (
     <form onSubmit={handleSubmit}>
       <input
