@@ -1,7 +1,8 @@
 # nestjs-mongodb-react
 Creando una aplicacion con nestjs en el backend y react en el frontend con una db en mongodb 
+```bash
 git clone https://github.com/jeanmunoz23/nestjs-mongodb-react
-
+```
 
 # En el Backend 
 In the following directory tasksback
