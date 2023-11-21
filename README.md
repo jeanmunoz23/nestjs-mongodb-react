@@ -5,8 +5,6 @@ git clone https://github.com/jeanmunoz23/nestjs-mongodb-react
 
 # En el Backend 
 In the following directory tasksback
-
-## Installation
 ```bash
 $ cd nestjs-mongodb-react\tasksback
 $ npm i
