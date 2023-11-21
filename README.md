@@ -1,13 +1,25 @@
 # nestjs-mongodb-react
 Creando una aplicacion con nestjs en el backend y react en el frontend con una db en mongodb 
+git clone https://github.com/jeanmunoz23/nestjs-mongodb-react
 
-# El backend 
+
+# En el Backend 
 In the following directory tasksback
 
 ## Installation
 ```bash
-$ npm i -g @nestjs/cli 
-$ npm i @nestjs/mongoose mongoose
-$ npm i --save class-validator class-transformer
+$ cd nestjs-mongodb-react\tasksback
+$ npm i
+$ npm run dev # run in development mode
+$ npm start # run in production mode
 
+```
+
+# En el frontend 
+In the following directory tasksfront
+```bash
+$ cd nestjs-mongodb-react\tasksfront
+$ npm i
+$ npm run dev # run in development mode
+$ npm start # run in production mode
 ```
